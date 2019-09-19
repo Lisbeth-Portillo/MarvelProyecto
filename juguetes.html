@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Marvel</title>
+
+  <!-- CSS  -->
+  <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="icon" href="../logo.png" type="image/x-icon">
+  <link async href="http://fonts.googleapis.com/css?family=Arizonia" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+  <link href="../css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="../css/index.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link async href="http://fonts.googleapis.com/css?family=Akronim" data-generated="http://enjoycss.com" rel="stylesheet" type="text/css"/>
+  <link rel="stylesheet" href="../images/font-awesome-4.3.0/css/font-awesome.min.css">
+</head>
+<body >
+
+<style >
+  * {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+body, html {
+height: 100%;
+margin: 0;
+padding: 0;
+font-size: 100%;
+background: #F5F5F5;
+font-family: 'Titillium Web', sans-serif;
+}
+.navigation a {
+float: right;
+color: #fff;
+text-decoration: none;
+padding: 4px 15px;
+margin: 10px;
+border-radius: 3px;
+background: #7db9e8;
+background: -moz-linear-gradient(top,  #7db9e8 0%, #1e5799 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#1e5799));
+background: -webkit-linear-gradient(top,  #7db9e8 0%,#1e5799 100%);
+background: -o-linear-gradient(top,  #7db9e8 0%,#1e5799 100%);
+background: -ms-linear-gradient(top,  #7db9e8 0%,#1e5799 100%);
+background: linear-gradient(to bottom,  #7db9e8 0%,#1e5799 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 );
+}
+.navigation a:hover {
+background: #1e5799;
+background: -moz-linear-gradient(top,  #1e5799 0%, #7db9e8 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#7db9e8));
+background: -webkit-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
+background: -o-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
+background: -ms-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
+background: linear-gradient(to bottom,  #1e5799 0%,#7db9e8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+}
+.navigation a:first-child {
+float: left;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+ul.product_list {
+display: block;
+float: left;
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+.product_grid a {
+text-decoration: none;
+}
+.product_item {
+display: inline-block;
+background: #fff;
+border: 1px solid #ccc;
+padding: 10px;
+position: relative;
+}
+
+.product_image {
+position: relative;
+overflow: hidden;
+}
+.product_image a {
+display: block;
+}
+.product_image img {
+display: block;
+-webkit-transition: all .35s ease-in-out;
+-moz-transition: all .35s ease-in-out;
+transition: all .35s ease-in-out;
+}
+.product_image img:hover {
+-o-transform: scale(1.2, 1.2);
+-moz-transform: scale(1.2, 1.2);
+-webkit-transform: scale(1.2, 1.2);
+-ms-transform: scale(1.2, 1.2);
+transform: scale(1.2, 1.2);
+}
+.product_image:hover .product_buttons {
+bottom: 0;
+}
+.product_buttons {
+position: absolute;
+bottom: -40%;
+left: 0;
+width: 100%;
+text-align: center;
+-webkit-transition: all .35s ease;
+-moz-transition: all .35s ease;
+transition: all .35s ease;
+}
+.product_buttons button {
+color: #fff;
+border: none;
+background: rgba(0, 0, 0, 0.5);
+font-size: 1em;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+}
+.product_buttons .product_heart:hover {
+color: #DF0404;
+background: rgba(255, 255, 255, 0.5);
+}
+.product_buttons .product_compare:hover {
+color: rgb(18, 150, 18);
+background: rgba(255, 255, 255, 0.5);
+}
+.product_buttons .add_to_cart:hover {
+color: #4DC8D3;;
+background: rgba(255, 255, 255, 0.5);
+}
+.quick_view h6 {
+background: rgba(0, 0, 0, 0.5);
+margin: 6px 0 0 0;
+text-align: center;
+color: #fff;
+padding: 8px 0;
+font-size: 1em;
+font-weight: normal;
+}
+.quick_view h6:before {
+content: "\f00e";
+font-family: FontAwesome;
+padding: 0 5px;
+}
+.product_title {
+float: left;
+width: 100%;
+text-transform: uppercase;
+}
+
+.product_price a {
+color: #000;
+}
+.price_old {
+color: #ea2e49;
+text-decoration: line-through;
+}
+.product_rating {
+float: right;
+width: 100px;
+height: 20px;
+overflow: hidden;
+background: url(https://bit.ly/1B4PjyM) top left no-repeat;
+background-position: 0 76%;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+ul.product_list {
+  margin: 0;
+}
+.product_item {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+.product_sale {
+  position: absolute;
+  z-index: 99;
+  right: -28px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.product_sale p {
+  margin: 0;
+  color: #fff;
+  background: #ff0000;
+  padding: 3px 25px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.product_image {
+  height: 150px;
+  float: left;
+  width: 100px;
+}
+.product_image .product_buttons {
+  display: none;
+}
+.product_title h5 {
+  margin: auto;
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 1;
+}
+.product_price span {
+  font-size: 1.1em;
+  line-height: 1;
+}
+.product_desc {
+  overflow: hidden;
+  float: left;
+  line-height: 1;
+}
+.product_desc p {
+  margin: 0;
+  line-height: 1.3;
+  padding: 10px 0;
+}
+.product_values .product_buttons {
+  position: relative;
+  text-align: left;
+  float: left;
+  margin-top: 7px;
+}
+.product_values .product_buttons button {
+  color: #252525;
+  background: rgba(255, 255, 255, 1);
+  font-size: 1em;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+ul.product_list {
+  margin: 1%;
+}
+.product_item {
+  width: 49%;
+  margin: 0;
+}
+.product_image {
+  height: 300px;
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+.product_image img {
+  max-height: 100%;
+  display: inline-block;
+}
+.product_title h5 {
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 1;
+  padding: 10px 0 0;
+  text-align: center;
+}
+.product_image .product_buttons {
+  display: block;
+}
+.product_price {
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+.product_rating {
+  width: 100%;
+  background-position: center 76%;
+  margin-bottom: 5px;
+}
+.product_desc {
+  text-align: center;
+}
+.product_values .product_buttons {
+  display: none;
+}
+}
+
+@media only screen and (min-width: 678px) {
+.product_item {
+  width: 32.5%;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.product_item {
+  width: 24.25%;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.product_item {
+  width: 19.5%;
+}
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.product_title h5 {
+  font-weight: bold;
+}
+.product_values {
+  float: left;
+  width: calc(100% - 100px);
+  padding: 0 10px;
+}
+.product_rating {
+  margin-right: 10px;
+}
+.product_image {
+  height: 150px;
+  float: left;
+  width: 100px;
+}
+.product_image .product_buttons {
+  display: none;
+}
+.product_desc {
+  overflow: hidden;
+  float: left;
+  line-height: 1;
+}
+.product_values .product_buttons {
+  position: relative;
+  text-align: left;
+  float: left;
+  margin-top: 7px;
+}
+.product_values .product_buttons button {
+  color: #252525;
+  background: rgba(255, 255, 255, 1);
+  font-size: 1em;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+ .product_sale {
+  display: none;
+}
+.product_image {
+  height: auto;
+  width: 100%;
+}
+.product_image .product_buttons {
+  display: block;
+}
+.product_values {
+  width: 100%;
+  padding: 0;
+  margin: 5px 0;
+}
+.product_title h5 {
+  margin: auto;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: bold;
+}
+.product_rating {
+  width: 100%;
+  background-position-x: 5%;
+}
+.product_desc {
+  display: none;
+}
+.product_values .product_buttons {
+  display: none;
+}
+}
+body, html {
+height: 100%;
+margin: 0;
+padding: 0;
+font-size: 100%;
+background: #F5F5F5;
+font-family: 'Titillium Web', sans-serif;
+}
+.navigation a {
+float: right;
+color: #fff;
+text-decoration: none;
+padding: 4px 15px;
+margin: 10px;
+border-radius: 3px;
+background: #7db9e8;
+background: -moz-linear-gradient(top,  #7db9e8 0%, #1e5799 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7db9e8), color-stop(100%,#1e5799));
+background: -webkit-linear-gradient(top,  #7db9e8 0%,#1e5799 100%);
+background: -o-linear-gradient(top,  #7db9e8 0%,#1e5799 100%);
+background: -ms-linear-gradient(top,  #7db9e8 0%,#1e5799 100%);
+background: linear-gradient(to bottom,  #7db9e8 0%,#1e5799 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=0 );
+}
+.navigation a:hover {
+background: #1e5799;
+background: -moz-linear-gradient(top,  #1e5799 0%, #7db9e8 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#7db9e8));
+background: -webkit-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
+background: -o-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
+background: -ms-linear-gradient(top,  #1e5799 0%,#7db9e8 100%);
+background: linear-gradient(to bottom,  #1e5799 0%,#7db9e8 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+}
+.navigation a:first-child {
+float: left;
+}
+img {
+max-width: 100%;
+height: auto;
+}
+ul.product_list {
+display: block;
+float: left;
+list-style-type: none;
+margin: 0;
+padding: 0;
+width: 100%;
+}
+.product_grid a {
+text-decoration: none;
+}
+.product_item {
+display: inline-block;
+background: #fff;
+border: 1px solid #ccc;
+padding: 10px;
+position: relative;
+}
+
+.product_image {
+position: relative;
+overflow: hidden;
+}
+.product_image a {
+display: block;
+}
+.product_image img {
+display: block;
+-webkit-transition: all .35s ease-in-out;
+-moz-transition: all .35s ease-in-out;
+transition: all .35s ease-in-out;
+}
+.product_image img:hover {
+-o-transform: scale(1.2, 1.2);
+-moz-transform: scale(1.2, 1.2);
+-webkit-transform: scale(1.2, 1.2);
+-ms-transform: scale(1.2, 1.2);
+transform: scale(1.2, 1.2);
+}
+.product_image:hover .product_buttons {
+bottom: 0;
+}
+.product_buttons {
+position: absolute;
+bottom: -40%;
+left: 0;
+width: 100%;
+text-align: center;
+-webkit-transition: all .35s ease;
+-moz-transition: all .35s ease;
+transition: all .35s ease;
+}
+.product_buttons button {
+color: #fff;
+border: none;
+background: rgba(0, 0, 0, 0.5);
+font-size: 1em;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+}
+.product_buttons .product_heart:hover {
+color: #DF0404;
+background: rgba(255, 255, 255, 0.5);
+}
+.product_buttons .product_compare:hover {
+color: rgb(18, 150, 18);
+background: rgba(255, 255, 255, 0.5);
+}
+.product_buttons .add_to_cart:hover {
+color: #4DC8D3;;
+background: rgba(255, 255, 255, 0.5);
+}
+
+.product_title {
+float: left;
+width: 100%;
+text-transform: uppercase;
+}
+
+.product_price a {
+color: #000;
+}
+.price_old {
+color: #ea2e49;
+text-decoration: line-through;
+}
+.product_rating {
+float: right;
+width: 100px;
+height: 20px;
+overflow: hidden;
+background: url(https://bit.ly/1B4PjyM) top left no-repeat;
+background-position: 0 76%;
+}
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+ul.product_list {
+margin: 0;
+}
+.product_item {
+width: 100%;
+margin: 0;
+overflow: hidden;
+}
+.product_sale {
+position: absolute;
+z-index: 99;
+right: -28px;
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.product_sale p {
+margin: 0;
+color: #fff;
+background: #ff0000;
+padding: 3px 25px;
+box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.product_image {
+height: 150px;
+float: left;
+width: 100px;
+}
+.product_image .product_buttons {
+display: none;
+}
+.product_title h5 {
+margin: auto;
+font-size: 1em;
+font-weight: 500;
+line-height: 1;
+}
+.product_price span {
+font-size: 1.1em;
+line-height: 1;
+}
+.product_desc {
+overflow: hidden;
+float: left;
+line-height: 1;
+}
+.product_desc p {
+margin: 0;
+line-height: 1.3;
+padding: 10px 0;
+}
+.product_values .product_buttons {
+position: relative;
+text-align: left;
+float: left;
+margin-top: 7px;
+}
+.product_values .product_buttons button {
+color: #252525;
+background: rgba(255, 255, 255, 1);
+font-size: 1em;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+border: 1px solid #000;
+}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+ul.product_list {
+margin: 1%;
+}
+.product_item {
+width: 49%;
+margin: 0;
+}
+.product_image {
+height: 300px;
+float: left;
+width: 100%;
+text-align: center;
+}
+.product_image img {
+max-height: 100%;
+display: inline-block;
+}
+.product_title h5 {
+font-size: 1.1em;
+font-weight: 500;
+line-height: 1;
+padding: 10px 0 0;
+text-align: center;
+}
+.product_image .product_buttons {
+display: block;
+}
+.product_price {
+float: left;
+text-align: center;
+width: 100%;
+}
+.product_rating {
+width: 100%;
+background-position: center 76%;
+margin-bottom: 5px;
+}
+.product_desc {
+text-align: center;
+}
+.product_values .product_buttons {
+display: none;
+}
+}
+
+@media only screen and (min-width: 678px) {
+.product_item {
+width: 32.5%;
+}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.product_item {
+width: 24.25%;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.product_item {
+width: 19.5%;
+}
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+.product_title h5 {
+font-weight: bold;
+}
+.product_values {
+float: left;
+width: calc(100% - 100px);
+padding: 0 10px;
+}
+.product_rating {
+margin-right: 10px;
+}
+.product_image {
+height: 150px;
+float: left;
+width: 100px;
+}
+.product_image .product_buttons {
+display: none;
+}
+.product_desc {
+overflow: hidden;
+float: left;
+line-height: 1;
+}
+.product_values .product_buttons {
+position: relative;
+text-align: left;
+float: left;
+margin-top: 7px;
+}
+.product_values .product_buttons button {
+color: #252525;
+background: rgba(255, 255, 255, 1);
+font-size: 1em;
+border-radius: 50%;
+width: 40px;
+height: 40px;
+border: 1px solid #000;
+}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+.product_sale {
+display: none;
+}
+.product_image {
+height: auto;
+width: 100%;
+}
+.product_image .product_buttons {
+display: block;
+}
+.product_values {
+width: 100%;
+padding: 0;
+margin: 5px 0;
+}
+.product_title h5 {
+margin: auto;
+font-size: 1em;
+line-height: 1;
+font-weight: bold;
+}
+.product_rating {
+width: 100%;
+background-position-x: 5%;
+}
+.product_desc {
+display: none;
+}
+.product_values .product_buttons {
+display: none;
+}
+}
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.content-all{
+  width: 210px;
+  margin: auto;
+  perspective: 1000px;
+  position: relative;
+  margin-top: 50px;
+}
+.content-carrousel{
+  width: 100%;
+  position: absolute;
+  animation: rotar 10s infinite linear;
+  transform-style: preserve-3d;
+}
+.content-carrousel:hover{
+  animation-play-state: paused;
+  cursor: pointer;
+}
+.content-carrousel figure{
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 0px 0px 20px 0px black;
+  transition: all 300ms;
+}
+.content-carrousel figure:hover{
+    box-shadow: 0px 0px 20px 0px black;
+    transition: all 300ms;
+}
+
+.content-carrousel figure:nth-child(3){
+  transform: rotateY(0deg)
+  translateZ(300px);}
+.content-carrousel figure:nth-child(1){
+transform: rotateY(60deg)
+translateZ(300px);}
+.content-carrousel figure:nth-child(2){
+transform: rotateY(120deg)
+translateZ(300px);}
+.content-carrousel figure:nth-child(4){
+transform: rotateY(180deg)
+translateZ(300px);}
+.content-carrousel figure:nth-child(6){
+transform: rotateY(240deg)
+translateZ(300px);}
+.content-carrousel figure:nth-child(8){
+transform: rotateY(300deg)
+translateZ(300px);}
+.content-carrousel figure:nth-child(7){
+transform: rotateY(360deg)
+translateZ(300px);}
+}
+
+
+.content-carrousel img{
+  width: 100%;
+}
+.content-carrousel img:hover{
+  transform: scale(1.2);
+  transition: all 300ms;
+}
+
+@keyframes rotar {
+  from{
+    transform: rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
+  }
+}
+  #logo{
+    padding-top: 5%;
+  }
+
+  #te{
+    color: red;
+    font-size: 500%;
+  }
+</style>
+
+      <div id="navbar" class="navbar-fixed scrollspy">
+      <nav class="black">
+        <div class="nav-wrapper container">
+        	<div  "text-right"> <a href="index.html" class="brand-logo center">
+            <img id= "logo"src="../logo.png" alt="Sin internet" width="60%">
+          </a></div>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+          <ul class="right hide-on-med-and-down">
+
+            <li><a href="C:\Users\TEMPORAL\Desktop\HTML\Tareas Atrasadas\Proyecto Individual\index.html">Inicio</a></li>
+             <li><a href="#">Contáctanos</a></li>
+             <li><a href="#">Ayuda</a></li>
+                <li> <a href="#"><i class="large material-icons">add_shopping_cart</i></a></li>
+
+          </ul>
+          <ul class="right side-nav" id="mobile-demo">
+            <li><a href="#">Inicio</a></li>
+             <li><a href="#">Contáctanos</a></li>
+             <li><a href="">Ayuda</a></li>
+            <li><a href="">Contact Us</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      </div>
+
+      <br>
+      <div class="content-all">
+          <div class="content-carrousel">
+            <figure><img class="responsive-img"src="https://www.hasbro.com/common/productimages/es_MX/25AB92BF97114325805331DAAAE3F22A/B08749FE733648C996F8921A031D9863.jpg5-296559.jpg"></figure>
+            <figure><img class="responsive-img" src="https://www.hasbro.com/common/productimages/es_MX/57C8B960661F41039BA751594ECCA636/693F53EC858E487AA3AE01C2F91998DB.jpg"></figure>
+            <figure><img class="responsive-img" src="https://ae01.alicdn.com/kf/HTB1leqwRpXXXXbWapXXq6xXFXXXN/Tama-o-ee-uu-hombres-mujeres-marvel-clothing-sudaderas-con-capucha-espesar-ropa-de-abrigo-chaqueta.jpg"></figure>
+            <figure><img class="responsive-img" src="https://www.hasbro.com/common/productimages/es_MX/655AAEE63FD241B09FE5C7CD59C50849/D490519339E248EE8080A935FBE4C379.jpg"></figure>
+            <figure><img class="responsive-img" src="https://http2.mlstatic.com/saga-completa-peliculas-marvel-espanol-latino-hd-digital-D_NQ_NP_831802-MCO29183451787_012019-F.jpg"></figure>
+            <figure><img class="responsive-img" src="https://www.hasbro.com/common/productimages/es_MX/79662C8C66AC4029BB2CAB99BEACD3B8/DC883AC7DBD148A39FAA946D69BF0714.jpg"></figure>
+            <figure><img class="responsive-img" src="https://www.hasbro.com/common/productimages/es_MX/1588092BD6AC44FBB256FE94603EA0FA/EB868856AADC4644B2943FD64E29A2D8.jpg"></figure>
+              <figure><img class="responsive-img" src="https://www.hasbro.com/common/productimages/es_MX/9572C535795D41978DE624AA82D75048/F660BEEBD82C4AA78D05D98271A0479B.jpg"></figure>
+          </div>
+          <br><br><br><br><br><br><br><br>
+        </div>
+      <div class="container z-depht-5">
+
+      </div>
+
+<div class="container">
+  <center><h3>JUGUETES</h3>  </center>
+  <li class="product_item" >
+    <div style="height:20%"  class="product_image" >
+      <a href="#"><img src="https://www.hasbro.com/common/productimages/es_MX/25AB92BF97114325805331DAAAE3F22A/B08749FE733648C996F8921A031D9863.jpg" alt="Sin internet"></a>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+        </div>
+    </div>
+    <div class="product_values">
+      <div class="product_title">
+        <h5>Guerra del Infinito</h5>
+      </div>
+      <div class="product_price">
+        <a href="#"><span>Q150.00</span></a>
+         <span class="product_rating"></span>
+      </div>
+      <div class="product_buttons">
+        <button class="product_heart"><i class="fa fa-heart"></i></button>
+        <button class="product_compare"><i class="fa fa-random"></i></button>
+        <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+      </div>
+    </div>
+  </li>
+
+  <li class="product_item" >
+    <div style="height:20%"  class="product_image" >
+      <a href="#"><img src="https://www.hasbro.com/common/productimages/es_MX/57C8B960661F41039BA751594ECCA636/693F53EC858E487AA3AE01C2F91998DB.jpg" alt="Sin internet"></a>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+        </div>
+    </div>
+    <div class="product_values">
+      <div class="product_title">
+        <h5>Marvel’s War Machine</h5>
+      </div>
+      <div class="product_price">
+        <a href="#"><span>Q100.00</span></a>
+         <span class="product_rating"></span>
+      </div>
+      <div class="product_buttons">
+        <button class="product_heart"><i class="fa fa-heart"></i></button>
+        <button class="product_compare"><i class="fa fa-random"></i></button>
+        <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+      </div>
+    </div>
+  </li>
+
+
+    <li class="product_item" >
+      <div style="height:20%"  class="product_image" >
+        <a href="#"><img src="https://www.hasbro.com/common/productimages/es_MX/FD8A04CDD6E941869E50806408B1ABC0/157e124cabca77708a0e95b0b8f594009551e6c1.jpg" alt="Sin internet"></a>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="product_compare"><i class="fa fa-random"></i></button>
+            <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+      </div>
+      <div class="product_values">
+        <div class="product_title">
+          <h5>Hulkbuster con Gema </h5>
+        </div>
+        <div class="product_price">
+          <a href="#"><span>Q100.00</span></a>
+           <span class="product_rating"></span>
+        </div>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </li>
+
+    <li class="product_item" >
+      <div style="height:20%"  class="product_image" >
+        <a href="#"><img src="https://www.hasbro.com/common/productimages/es_MX/5381A09F64F04A8CA20F10A1E3F54295/6f5bf2d434ed654b8911c615fc20e3affa441ebf.jpg" alt="Sin internet"></a>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="product_compare"><i class="fa fa-random"></i></button>
+            <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+      </div>
+      <div class="product_values">
+        <div class="product_title">
+          <h5>Marvel Ant-Man  </h5>
+        </div>
+        <div class="product_price">
+          <a href="#"><span>Q100.00</span></a>
+           <span class="product_rating"></span>
+        </div>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </li>
+    <li class="product_item" >
+      <div style="height:20%"  class="product_image" >
+        <a href="#"><img src="https://www.hasbro.com/common/productimages/es_MX/79662C8C66AC4029BB2CAB99BEACD3B8/dc8becba7fabf03432ade1b3f1321ea630584b91.jpg" alt="Sin internet"></a>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="product_compare"><i class="fa fa-random"></i></button>
+            <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+      </div>
+      <div class="product_values">
+        <div class="product_title">
+          <h5>Marvel Ant-Man</h5>
+        </div>
+        <div class="product_price">
+          <a href="#"><span>Q50.00</span></a>
+           <span class="product_rating"></span>
+        </div>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </li>
+
+    <li class="product_item" >
+      <div style="height:20%"  class="product_image" >
+        <a href="#"><img src="https://www.vacro.es/image/cache/data/Marvel%20/Accesorios%20Marvel/WD16335-10-1-200x250.jpg" alt="Sin internet"></a>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="product_compare"><i class="fa fa-random"></i></button>
+            <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+      </div>
+      <div class="product_values">
+        <div class="product_title">
+          <h5>LLAVERO DE SPIDERMAN </h5>
+        </div>
+        <div class="product_price">
+          <a href="#"><span>Q40.00</span></a>
+           <span class="product_rating"></span>
+        </div>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </li>
+
+    <li class="product_item" >
+      <div style="height:20%"  class="product_image" >
+        <a href="#"><img src="https://www.vacro.es/image/cache/data/Marvel%20/Accesorios%20Marvel/WD16335-11-1-1-200x250.jpg" alt="Sin internet"></a>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="product_compare"><i class="fa fa-random"></i></button>
+            <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+      </div>
+      <div class="product_values">
+        <div class="product_title">
+          <h5>LLAVERO DE SPIDERMAN </h5>
+        </div>
+        <div class="product_price">
+          <a href="#"><span>Q40.00</span></a>
+           <span class="product_rating"></span>
+        </div>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </li>
+
+
+    <li class="product_item" >
+      <div style="height:20%"  class="product_image" >
+        <a href="#"><img src="https://www.vacro.es/image/cache/data/Marvel%20/Accesorios%20Marvel/2733-MOCHILA%20CAPITAN%20AMERICA-200x250.jpg" alt="Sin internet"></a>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="product_compare"><i class="fa fa-random"></i></button>
+            <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+      </div>
+      <div class="product_values">
+        <div class="product_title">
+          <h5>MOCHILA CAPITÁN AMÉRICA </h5>
+        </div>
+        <div class="product_price">
+          <a href="#"><span>Q200.00</span></a>
+           <span class="product_rating"></span>
+        </div>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </li>
+
+    <li class="product_item" >
+      <div style="height:20%"  class="product_image" >
+        <a href="#"><img src="https://www.vacro.es/image/cache/data/Marvel%20/Accesorios%20Marvel/CD-21-839-Mochila%20juego%20personaje%20de%20Avengers-IRONMAN-200x250.jpg" alt="Sin internet"></a>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="product_compare"><i class="fa fa-random"></i></button>
+            <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+      </div>
+      <div class="product_values">
+        <div class="product_title">
+          <h5>MOCHILA DE AVENGERS</h5>
+        </div>
+        <div class="product_price">
+          <a href="#"><span>Q200.00</span></a>
+           <span class="product_rating"></span>
+        </div>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </li>
+    <li class="product_item" >
+      <div style="height:20%"  class="product_image" >
+        <a href="#"><img src="https://www.vacro.es/image/cache/data/Marvel%20/Accesorios%20Marvel/CD-21-838-Mochila%20juego%20personaje%20de%20Avengers-CAPITAN-200x250.jpg" alt="Sin internet"></a>
+          <div class="product_buttons">
+            <button class="product_heart"><i class="fa fa-heart"></i></button>
+            <button class="product_compare"><i class="fa fa-random"></i></button>
+            <a href="../producto.html"><button class="add_to_cart"><i class="fa fa-shopping-cart"></i></button></a>
+          </div>
+      </div>
+      <div class="product_values">
+        <div class="product_title">
+          <h5>MOCHILA DE AVENGERS</h5>
+        </div>
+        <div class="product_price">
+          <a href="#"><span>Q200.00</span></a>
+           <span class="product_rating"></span>
+        </div>
+        <div class="product_buttons">
+          <button class="product_heart"><i class="fa fa-heart"></i></button>
+          <button class="product_compare"><i class="fa fa-random"></i></button>
+          <button scriptsrc class="add_to_cart" href="#modal1"><i class="fa fa-shopping-cart"></i></button>
+        </div>
+      </div>
+    </li>
+
+
+
+
+
+  <ul class="pagination center">
+   <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+   <li class="active red"><a href="index.html">1</a></li>
+   <li class="waves-effect"><a href="ropa.html">2</a></li>
+   <li class="waves-effect"><a href="juguetes.html">3</a></li>
+   <li class="waves-effect"><a href="accesorio.html">4</a></li>
+   <li class="waves-effect"><a href="#!">5</a></li>
+   <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+
+ </ul>
+  </div>
+</div>
+  <br><br>
+
+     <footer class="page-footer">
+          <div class="container">
+
+            <div class="row">
+              .<div class="col s4">
+                <h5 style="color:white">¿Necesitas ayuda?:</h5>
+                <ul style="color:white">
+                  <li>Mi pedido</li>
+                  <li>Envíos & Entregas</li>
+                  <li>Productos & Guías de tallas</li>
+                  <li>Devoluciones</li>
+                  <li>Más dudas</li>
+
+                </ul>
+              </div>
+              <div class="col s4">
+                <h5 style="color:white">Información:</h5>
+                  <ul style="color:white">
+                <li>Marvel en el Mundo</li>
+                <li>Aviso legal y Condiciones de Venta</li>
+                <li>Política de Privacidad</li>
+                <li>Política de Cookies</li>
+                <li>Zona de empresas</li>
+                <li>Sitemap</li>
+                  </ul>
+              </div>
+            	<div class="col s4">
+                <h5 style="color:white">Síguenos en:</h5>
+            		<a href="https://www.facebook.com/sharer/sharer.php?u=&t=" title="Share on Facebook" target="_blank"> <i class="fa fa-facebook" style="font-size: 35px; color:white;"></i></a> &nbsp;  &nbsp;
+                <a href="https://twitter.com/intent/tweet?source=&text=:%20" title="Tweet" target="_blank"> <i class="fa fa-twitter" style="font-size: 35px; color:white;"></i></a> &nbsp;  &nbsp;
+                <a href="https://plus.google.com/share?url=" title="Share on Google+" target="_blank"> <i class="fa fa-google-plus" style="font-size: 35px; color:white;"></i></a> &nbsp;  &nbsp;
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=&source=" title="Share on LinkedIn" target="_blank">
+                	<i class="fa fa-linkedin" style="font-size: 35px; color:white;">
+
+
+                </i></a>
+            	</div>
+
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © Marvel
+            .<div class="right">
+              <a class="grey-text text-lighten-4" href="#!">Guatemala</a>
+              <a class="grey-text text-lighten-4" href="#!">Honduras</a>
+              <a class="grey-text text-lighten-4" href="#!">El Salvador</a>
+              <a class="grey-text text-lighten-4" href="#!">Costa Rica</a>
+            </div>
+
+            </div>
+          </div>
+        </footer>
+
+
+
+<!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../js/materialize.min.js"></script>
+      <script type="text/javascript" script-name="bonbon" src="http://use.edgefonts.net/bonbon.js"></script>
+      <script type="text/javascript" script-name="berkshire-swash" src="http://use.edgefonts.net/berkshire-swash.js"></script>
+      <script type="text/javascript" script-name="chicle" src="http://use.edgefonts.net/chicle.js"></script>
+<script type="text/javascript" src="../js/init.js"></script>
+
+<script type="text/javascript">
+  <script type="text/javascript">
+    function checkWindowSize() {
+    if ( jQuery(window).width() >= 480 ) {
+        $('.truncate').succinct({
+            size: 100
+        });
+    }
+    else if ( jQuery(window).width() >= 320 ) {
+        $('.truncate').succinct({
+            size: 55
+        });
+    }
+    else {
+        $('.truncate').succinct({
+            size: 150
+        });
+    }
+}
+
+jQuery(document).ready(function(){
+    jQuery(window).resize(checkWindowSize);
+    checkWindowSize();
+});
+
+    function checkWindowSize() {
+    if ( jQuery(window).width() >= 480 ) {
+        $('.truncate').succinct({
+            size: 100
+        });
+    }
+    else if ( jQuery(window).width() >= 320 ) {
+        $('.truncate').succinct({
+            size: 55
+        });
+    }
+    else {
+        $('.truncate').succinct({
+            size: 150
+        });
+    }
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var elems = document.querySelectorAll('.modal');
+  var instances = M.Modal.init(elems);
+});
+
+jQuery(document).ready(function(){
+    jQuery(window).resize(checkWindowSize);
+    checkWindowSize();
+});
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.collapsible');
+    var instances = M.Collapsible.init(elems);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems);
+  });
+</script>
+
+<script>
+	 $(document).ready(function(){
+      $('.slider').slider();
+      $(".button-collapse").sideNav();
+       $('.parallax').parallax();
+
+    });
+</script>
+ <script>
+
+  	    $('.head-link').click(function(e) {
+        e.preventDefault();
+
+        var goto = $(this).attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(goto).offset().top
+        }, 800);
+    });
+
+  </script>
+
+
+
+			 <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-60673008-2', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+
+  </body>
+</html>
